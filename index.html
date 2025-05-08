@@ -118,6 +118,15 @@
     var swiper = new Swiper(".mySwiper", {
       grabCursor: true,
       effect: "creative",
+      direction: "vertical",
+      slidesPerView: 1,
+      spaceBetween: 20,
+      speed: 2000, // transition speed in ms (1 second)
+      loop: true,
+      autoplay: {
+        delay: 6000, // time between slides in ms
+        disableOnInteraction: false,
+      },
       creativeEffect: {
         prev: {
           shadow: true,
